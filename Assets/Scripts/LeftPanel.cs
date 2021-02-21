@@ -11,7 +11,8 @@ public class LeftPanel : MonoBehaviour
 
     public int _currentScore;
 
-    void UpdateScore(int _PlusHightScore){
-        _scoreDisplay.SetText($"Stars: {_currentScore + _PlusHightScore}");
+    public void UpdateScore(int _PlusHightScore){
+        _currentScore += _PlusHightScore;
+        _scoreDisplay.SetText($"Stars: { _currentScore }");
     }
 }
