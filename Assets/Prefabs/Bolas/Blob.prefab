@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3918354821186290444}
   - component: {fileID: 3918354821186290443}
   - component: {fileID: 3918354821186290442}
+  - component: {fileID: 2044816260}
   m_Layer: 5
   m_Name: Blob
   m_TagString: Untagged
@@ -120,9 +121,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11500000, guid: c3d88eb4a62de2944a450ba614dbac03, type: 3}
-        m_TargetAssemblyTypeName: LeftPanel, Assembly-CSharp
-        m_MethodName: 
+      - m_Target: {fileID: 2044816260}
+        m_TargetAssemblyTypeName: BlobScript, Assembly-CSharp
+        m_MethodName: UpdateScore
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -132,6 +133,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &2044816260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3918354821186290440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b95ab93e31f0b84e9501f758624ed32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3918354822544597845
 GameObject:
   m_ObjectHideFlags: 0
