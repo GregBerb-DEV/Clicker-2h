@@ -912,9 +912,9 @@ MonoBehaviour:
   m_fontSize: 36
   m_fontSizeBase: 36
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_fontSizeMax: 36
   m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -1059,6 +1059,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1881286268}
     m_Modifications:
+    - target: {fileID: 9112793363214748095, guid: eec63de7042a9ca4ba531cd9b8931391, type: 3}
+      propertyPath: m_text
+      value: '+1
+
+'
+      objectReference: {fileID: 0}
     - target: {fileID: 9112793363784205441, guid: eec63de7042a9ca4ba531cd9b8931391, type: 3}
       propertyPath: m_Name
       value: AumentoButton

@@ -14,7 +14,7 @@ public class ParticleDestroyer : MonoBehaviour
 
     private void Update()
     {
-        if (Time.time >= _spawnTime - _lifeSpan)
+        if (Time.time >= _spawnTime + _lifeSpan)
             Destroy(gameObject);
     }
 }
