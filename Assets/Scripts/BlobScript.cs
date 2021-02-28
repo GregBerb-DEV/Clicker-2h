@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class BlobScript : MonoBehaviour
 {
+    public static int _scoreIncrement = 1;
     private Button _button;
 
     void Start()
@@ -14,7 +15,7 @@ public class BlobScript : MonoBehaviour
 
     public void UpdateScore(int _PlusHightScore)
     {
-        LeftPanel.Instance.UpdateScore(1);
+        LeftPanel.Instance.UpdateScore(_scoreIncrement);
     }
 
 
