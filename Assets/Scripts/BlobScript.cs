@@ -27,6 +27,7 @@ public class BlobScript : MonoBehaviour
     {
         LeftPanel.Instance.UpdateScore(_scoreIncrement);
         Instantiate(_particle, transform.position, Quaternion.identity);
+        Camera.main.GetComponent<AudioSource>().Play();
         Destroy(gameObject);
     }
 
