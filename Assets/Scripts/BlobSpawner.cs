@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class BlobSpawner : MonoBehaviour
 {
+    public static BlobSpawner Instance;
     [SerializeField]
     private GameObject _blobGameObject = default;
     [SerializeField]
@@ -12,10 +13,21 @@ public class BlobSpawner : MonoBehaviour
     [SerializeField] private int _maxSpawnX;
     [SerializeField] private int _minSpawnY;
     [SerializeField] private int _maxSpawnY;
-    [SerializeField] private float _minSpawnTime;
-    [SerializeField] private float _maxSpawnTime;
+    public float _minSpawnTime;
+    public float _maxSpawnTime;
 
     private float Timer;
+    private void Awake()
+    {
+        if (Instance != null)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            Instance = this;
+        }
+    }
 
     private void Start()
     {
