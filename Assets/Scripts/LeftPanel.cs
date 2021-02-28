@@ -9,6 +9,8 @@ public class LeftPanel : MonoBehaviour
     [SerializeField] private TextMeshProUGUI _scoreDisplay = default;
 
     public static LeftPanel Instance;
+    public int _currentScore;
+
 
     private void Awake()
     {
@@ -23,11 +25,14 @@ public class LeftPanel : MonoBehaviour
         }
     }
 
-    public int _currentScore;
-
     public void UpdateScore(int _PlusHightScore)
     {
         _currentScore += _PlusHightScore;
+        UpdateScoreText();
+    }
+
+    public void UpdateScoreText()
+    {
         _scoreDisplay.SetText($"Stars: { _currentScore }");
     }
 }
