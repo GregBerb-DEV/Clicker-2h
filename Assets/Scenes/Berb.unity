@@ -783,7 +783,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.75, y: -34.324}
+  m_AnchoredPosition: {x: 0.75, y: -34.324005}
   m_SizeDelta: {x: -11.155792, y: -68.64641}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &530671602
@@ -1191,7 +1191,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.023025513, y: -4.62}
+  m_AnchoredPosition: {x: -0.023025513, y: -4.619999}
   m_SizeDelta: {x: -0.046051025, y: -52.167408}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &989273225
@@ -1358,8 +1358,8 @@ Canvas:
   m_GameObject: {fileID: 997363019}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 721544495}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -1653,7 +1653,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.023025513, y: -4.62}
+  m_AnchoredPosition: {x: -0.023025513, y: -4.619999}
   m_SizeDelta: {x: -0.046051025, y: -52.167408}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1350476401
@@ -1787,7 +1787,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.75, y: -34.324}
+  m_AnchoredPosition: {x: 0.75, y: -34.324005}
   m_SizeDelta: {x: -11.155792, y: -68.64641}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1540159266
@@ -2271,7 +2271,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.75, y: -34.324}
+  m_AnchoredPosition: {x: 0.75, y: -34.324005}
   m_SizeDelta: {x: -11.155792, y: -68.64641}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2072568145
@@ -2405,7 +2405,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.023025513, y: -4.62}
+  m_AnchoredPosition: {x: -0.023025513, y: -4.619999}
   m_SizeDelta: {x: -0.046051025, y: -52.167408}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2147386176
@@ -2560,5 +2560,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: BlobSpawner
       objectReference: {fileID: 0}
+    - target: {fileID: 2907224350132024704, guid: dd1b1ce4b86398f43ace6711950063a3, type: 3}
+      propertyPath: _blobGameObject
+      value: 
+      objectReference: {fileID: 3918354821186290440, guid: 45e3a65d50fbaef48a20167fbb519983, type: 3}
+    - target: {fileID: 2907224350132024704, guid: dd1b1ce4b86398f43ace6711950063a3, type: 3}
+      propertyPath: _parentPanelTransform
+      value: 
+      objectReference: {fileID: 137524639}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd1b1ce4b86398f43ace6711950063a3, type: 3}

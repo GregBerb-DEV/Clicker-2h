@@ -10,18 +10,23 @@ public class LeftPanel : MonoBehaviour
 
     public static LeftPanel Instance;
 
-    private void Awake(){
-        if (Instance != null){
+    private void Awake()
+    {
+        if (Instance != null)
+        {
             Destroy(gameObject);
-        }else
+        }
+        else
         {
             Instance = this;
+            _scoreDisplay.SetText($"Stars: {_currentScore}");
         }
     }
 
     public int _currentScore;
 
-    public void UpdateScore(int _PlusHightScore){
+    public void UpdateScore(int _PlusHightScore)
+    {
         _currentScore += _PlusHightScore;
         _scoreDisplay.SetText($"Stars: { _currentScore }");
     }
