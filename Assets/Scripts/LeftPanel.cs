@@ -6,8 +6,18 @@ using UnityEngine.UI;
 
 public class LeftPanel : MonoBehaviour
 {
-    // Start is called before the first frame update
     [SerializeField] private TextMeshProUGUI _scoreDisplay = default;
+
+    public static LeftPanel Instance;
+
+    private void Awake(){
+        if (Instance != null){
+            Destroy(gameObject);
+        }else
+        {
+            Instance = this;
+        }
+    }
 
     public int _currentScore;
 
