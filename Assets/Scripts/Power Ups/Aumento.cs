@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Agiliza : MonoBehaviour
+public class Aumento : MonoBehaviour
 {
     [SerializeField] private int _cost = 10;
-    [SerializeField] private int _spawnTimeModifier;
+    [SerializeField] private int _scoreBonus = 1;
 
     public void ApplyEffect()
     {
@@ -13,8 +13,7 @@ public class Agiliza : MonoBehaviour
         {
             LeftPanel.Instance._currentScore -= _cost;
             LeftPanel.Instance.UpdateScoreText();
-            BlobSpawner.Instance._minSpawnTime -= BlobSpawner.Instance._minSpawnTime / _spawnTimeModifier;
-            BlobSpawner.Instance._maxSpawnTime -= BlobSpawner.Instance._maxSpawnTime / _spawnTimeModifier;
+            BlobScript._scoreIncrement += _scoreBonus;
         }
     }
 }
