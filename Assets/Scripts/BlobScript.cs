@@ -7,6 +7,7 @@ public class BlobScript : MonoBehaviour
 {
     public static int _scoreIncrement = 1;
     [SerializeField] private float _buttonLifespan = 3;
+    [SerializeField] private GameObject _particle;
     private Button _button;
     private float _startTime;
 
@@ -25,6 +26,7 @@ public class BlobScript : MonoBehaviour
     public void UpdateScore(int _PlusHightScore)
     {
         LeftPanel.Instance.UpdateScore(_scoreIncrement);
+        Instantiate(_particle, transform.position, Quaternion.identity);
         Destroy(gameObject);
     }
 
